@@ -28,6 +28,13 @@ nav a {
     text-decoration: none;
 }
 
+/* Faz o conteúdo principal expandir para preencher o ecrã e empurrar o rodapé */
+main.conteudo-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 h2 {
     text-align: center;
     font-size: 25px;
@@ -51,9 +58,12 @@ h3 {
 }
 
 .info-alunos {
-    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
     margin-top: auto;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    text-align: left;
 }
 
 .info-alunos p {
@@ -62,10 +72,21 @@ h3 {
 }
 
 footer {
-    text-align: center;
+    position: relative; /* Torna o rodapé a referência para posicionar o logo */
+    display: flex;
+    justify-content: center; /* Mantém o texto centralizado */
+    align-items: center;
     padding: 1.5rem;
     background-color: #1a1a2e;
     color: #fff;
+}
+
+.logo-footer {
+    position: absolute;
+    left: 1.5rem; /* Fixa o logo colado no canto esquerdo com uma margem */
+    height: 40px;  /* Ajuste a altura do logo conforme preferir (ex: 35px, 40px, 50px) */
+    width: auto;   /* Mantém a proporção original da imagem */
+    object-fit: contain;
 }
 
 .imagens {
