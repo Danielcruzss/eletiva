@@ -1,102 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
+/* Página Arte por IA — Cidades Inteligentes */
 
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: #f4f7f6;
-    color: #333;
+    margin: 0;
+    background: #f4f7fb;
+    color: #263449;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
-
 nav {
-    background-color: #16213e;
+    background: #16213e;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     padding: 1rem;
     flex-wrap: wrap;
 }
-
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
-
-h2 {
-    text-align: center;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.bloco-conteudo {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    text-align: left;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #555;
-}
-
-.info-alunos {
-    text-align: left;
-    margin-top: auto;
-    padding: 2rem 0 1rem 0;
-}
-
-.info-alunos p {
-    height: auto;
-    line-height: 1.5;
-}
-
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #1a1a2e;
-    color: #fff;
+    background: #1a1a2e;
+    color: white;
 }
-
-
 .pagina-ia {
     width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 30px 0;
+    max-width: 1150px;
+    margin: auto;
+    padding: 35px 0 60px;
 }
-
-/* Título principal */
-
 .titulo-ia {
     text-align: center;
     margin-bottom: 30px;
 }
-
 .titulo-ia h1 {
     color: #16213e;
     font-size: 36px;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
 }
-
 .titulo-ia p {
     color: #555;
     font-size: 18px;
 }
 
-/* Seções de conteúdo */
+/* Quatro seções principais */
 
 .secao-ia {
+<<<<<<< HEAD
     background-color: #a15656;
     border: 1px solid #d5dce8;
     border-radius: 12px;
@@ -285,310 +243,68 @@ footer {
 .pagina-ia-body .secao-ia {
     padding: 35px;
     margin-bottom: 25px;
+=======
+    background: white;
+>>>>>>> 8af87c36c7e2114100377e1e61326ccd0e3f9010
     border: 1px solid #e0e7f0;
     border-radius: 15px;
-    background: #ffffff;
-    box-shadow: 0 5px 18px rgba(35, 65, 105, 0.05);
+    padding: 35px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(35,65,105,.05);
 }
-
-.pagina-ia-body .secao-ia h2 {
-    margin: 15px 0;
-    color: #172b4d;
-    font-size: 29px;
+.secao-ia h2 {
+    background: #245da9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: -30px -30px 25px;
+    font: bold 21px Arial, sans-serif;
+    text-align: center;
 }
-
-.pagina-ia-body .secao-ia > p {
-    color: #56657a;
+.secao-ia p {
+    color: #536176;
     font-size: 16px;
     line-height: 1.8;
 }
-
-/* CARTÕES */
-
-.pagina-ia-body .cartoes-ia {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-    margin-top: 30px;
-}
-
-.pagina-ia-body .cartao-ia {
-    padding: 23px;
-    border: 1px solid #e0e9f5;
-    border-radius: 11px;
-    background: #ff0000 !important;
-    transition: 0.3s;
-}
-
-.pagina-ia-body .cartao-ia:hover {
-    transform: translateY(-5px);
-    border-color: #78a9ed;
-    box-shadow: 0 8px 20px rgba(52, 120, 212, 0.10);
-}
-
-.pagina-ia-body .icone-ia {
-    color: #3478d4;
-    font-size: 34px;
-}
-
-.pagina-ia-body .cartao-ia h3 {
-    margin: 12px 0;
-    color: #203653;
-}
-
-.pagina-ia-body .cartao-ia p {
-    color: #65748a;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* LINHA DO TEMPO */
-
-.pagina-ia-body .linha-tempo {
-    margin-top: 30px;
-    padding-left: 15px;
-    border-left: 2px solid #a9c9f2;
-}
-
-.pagina-ia-body .etapa-ia {
-    display: flex;
-    gap: 20px;
-    padding: 10px 0 28px;
-}
-
-.pagina-ia-body .etapa-numero {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    width: 43px;
-    height: 43px;
-    border: 1px solid #8db7ed;
-    border-radius: 50%;
-    background: #edf5ff;
-    color: #3478d4;
-    font-weight: bold;
-}
-
-.pagina-ia-body .etapa-ia h3 {
-    margin: 5px 0 8px;
-    color: #203653;
-}
-
-.pagina-ia-body .etapa-ia p {
-    color: #5d6b80;
-    line-height: 1.7;
-}
-
-.pagina-ia-body .etapa-final .etapa-numero {
-    background: #3478d4;
-    color: #ffffff;
-}
-
-.pagina-ia-body .observacao-ia {
-    padding: 12px 16px;
-    border-left: 3px solid #e4b65d;
-    background: #fff9e9;
-    color: #6e5a2c;
-    font-size: 13px !important;
-}
-
-/* IMAGEM */
-
-.pagina-ia-body .figura-resultado {
-    margin: 25px 0 0;
-    padding: 12px;
-    border: 1px solid #dce6f3;
-    border-radius: 12px;
-    background: #f8faff;
-}
-
-.pagina-ia-body .imagem-resultado {
-    display: block;
-    width: 100%;
-    max-width: 950px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 8px;
-    object-fit: contain;
-}
-
-.pagina-ia-body .figura-resultado figcaption {
-    padding: 13px 5px 5px;
-    color: #687990;
-    text-align: center;
-    font-size: 13px;
-}
-
-.pagina-ia-body .credito-ia {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 20px;
-    padding: 17px;
-    border-radius: 8px;
-    background: #edf4fd;
-}
-
-.pagina-ia-body .credito-ia span {
-    color: #3478d4;
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-.pagina-ia-body .credito-ia strong {
-    color: #203653;
-}
-
-/* REFLEXÃO */
-
-.pagina-ia-body .reflexao-ia {
-    border-color: #d2e2f6;
-    background: linear-gradient(135deg, #ffffff, #f0f6ff);
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 700px) {
-    .pagina-ia-body .pagina-ia {
-        width: 94%;
-    }
-
-    .pagina-ia-body .hero-ia {
-        padding: 55px 25px;
-    }
-
-    .pagina-ia-body .hero-ia h1 {
-        font-size: 38px;
-    }
-
-    .pagina-ia-body .secao-ia {
-        padding: 23px;
-    }
-
-    .pagina-ia-body .cartoes-ia {
-        grid-template-columns: 1fr;
-    }
-
-    .pagina-ia-body .hero-detalhe {
-        display: none;
-    }
-}
-/* Títulos das seções - Página de Arte por IA */
-
-.pagina-ia-body .secao-ia h2 {
-    background-color: #245da9;
-    color: #ffffff;
-    padding: 15px 20px;
-    border-radius: 8px;
-    border-bottom: none;
-    margin: -30px -30px 25px;
-}
-
-.pagina-ia-body .secao-ia h3 {
+.secao-ia h3 {
     color: #245da9;
-    background: transparent;
+    font-size: 18px;
 }
 
-.pagina-ia-body .secao-ia p {
-    color: #536176;
-}
+/* Etapas e prompts */
 
-/* =========================================
-   PAGINA 2 - REFINAMENTOS DAS IMAGENS
-   ========================================= */
-
-.pagina-ia-body .etapa-prompt {
-    background-color: #f5f8ff;
+.etapa-prompt {
+    background: #f5f8ff;
     border-left: 5px solid #3478d4;
     border-radius: 10px;
     padding: 25px;
     margin: 25px 0;
 }
-
-.pagina-ia-body .etapa-prompt h3 {
-    color: #245da9;
+.etapa-prompt h3 {
     font-size: 21px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
 }
-
-.pagina-ia-body .etapa-prompt p {
-    margin-bottom: 14px;
-    line-height: 1.8;
-}
-
-.pagina-ia-body .rotulo-prompt {
-    font-weight: bold;
-    color: #245da9 !important;
-}
-
-.pagina-ia-body .texto-prompt {
-    background-color: #ffffff;
-    border: 1px solid #d8e5f7;
-    border-radius: 8px;
-    padding: 18px;
-    color: #263449;
-    font-style: italic;
-    overflow-wrap: anywhere;
-}
-
-.pagina-ia-body .figura-etapa {
+/* Corrige o tamanho das imagens */
+.figura-etapa,
+.figura-resultado {
+    width: 100%;
+    max-width: 100%;
     margin: 20px 0;
-    padding: 12px;
-    background-color: #ffffff;
-    border: 1px solid #dce6f3;
-    border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.pagina-ia-body .figura-etapa img {
+.figura-etapa img,
+.figura-resultado img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: contain;
     border-radius: 8px;
 }
 
-.pagina-ia-body .figura-etapa figcaption {
-    margin-top: 12px;
-    text-align: center;
-    color: #64748b;
-    font-size: 14px;
-}
-
-.pagina-ia-body .nota-processo {
-    font-size: 13px !important;
-    color: #64748b !important;
-}
-
-.pagina-ia-body .figura-resultado {
-    margin: 25px 0;
-}
-
-.pagina-ia-body .ferramenta-ia {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-    color: #245da9 !important;
-}
-
-/* Ajustes para celulares */
-
-@media (max-width: 600px) {
-    .pagina-ia-body .etapa-prompt {
-        padding: 15px;
-    }
-
-    .pagina-ia-body .etapa-prompt h3 {
-        font-size: 18px;
-    }
-
-    .pagina-ia-body .texto-prompt {
-        padding: 12px;
-    }
-
-    .pagina-ia-body .secao-ia h2 {
-        margin: -15px -15px 20px;
-        font-size: 18px;
-    }
+/* Impede que o conteúdo ultrapasse a página */
+.secao-ia {
+    min-width: 0;
 }
